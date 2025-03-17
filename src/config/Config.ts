@@ -10,4 +10,7 @@ export const DISPLAY_CONFIG = {
     },
     width: () => (typeof window === "undefined" ? 1920 : window.innerWidth), // 기본값 예시
     height: () => (typeof window === "undefined" ? 1080 : window.innerHeight),
+    chunkSize: 2000, // 청크 크기 (한 변의 길이)
+    renderDistance: 3000, // 별 생성 범위 (카메라로부터의 거리)
+    starCount: 4000, // 별의 개수
   };
